@@ -1,0 +1,54 @@
+{
+    "name": "stitch-digital/laravel-simpro-postgres",
+    "description": "Laravel package for working with a direct Simpro postgres connection",
+    "keywords": [
+        "stitch-digital",
+        "laravel-simpro-postgres"
+    ],
+    "homepage": "https://github.com/stitch-digital/laravel-simpro-postgres",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "John Trickett",
+            "email": "john@stitch-digital.co",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.4|^8.0",
+        "illuminate/support": "^8.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^6.0",
+        "phpunit/phpunit": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "StitchDigital\\LaravelSimproPostgres\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "StitchDigital\\LaravelSimproPostgres\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "StitchDigital\\LaravelSimproPostgres\\LaravelSimproPostgresServiceProvider"
+            ],
+            "aliases": {
+                "LaravelSimproPostgres": "StitchDigital\\LaravelSimproPostgres\\LaravelSimproPostgresFacade"
+            }
+        }
+    }
+}
