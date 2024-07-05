@@ -1,0 +1,3 @@
+theme: just-the-docs
+title: Laravel Simpro Postgres
+description: Laravel package for working with a direct Simpro postgres connection
