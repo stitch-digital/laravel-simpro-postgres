@@ -18,14 +18,15 @@ class ComposerStaticInitb860ab35a9ddadff9b004320e49cef92
         '667aeda72477189d0494fecd327c3641' => __DIR__ . '/..' . '/symfony/var-dumper/Resources/functions/dump.php',
         '7b11c4dc42b3b3023073cb14e519683c' => __DIR__ . '/..' . '/ralouphie/getallheaders/src/getallheaders.php',
         '0d59ee240a4cd96ddbb4ff164fccea4d' => __DIR__ . '/..' . '/symfony/polyfill-php73/bootstrap.php',
-        'e39a8b23c42d4e1452234d762b03835a' => __DIR__ . '/..' . '/ramsey/uuid/src/functions.php',
         '8825ede83f2f289127722d4e842cf7e8' => __DIR__ . '/..' . '/symfony/polyfill-intl-grapheme/bootstrap.php',
+        'e39a8b23c42d4e1452234d762b03835a' => __DIR__ . '/..' . '/ramsey/uuid/src/functions.php',
+        'b6b991a57620e2fb6b2f66f03fe9ddc2' => __DIR__ . '/..' . '/symfony/string/Resources/functions.php',
+        '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
         'b33e3d135e5d9e47d845c576147bda89' => __DIR__ . '/..' . '/php-di/php-di/src/functions.php',
         '9b38cf48e83f5d8f60375221cd213eee' => __DIR__ . '/..' . '/phpstan/phpstan/bootstrap.php',
-        'b6b991a57620e2fb6b2f66f03fe9ddc2' => __DIR__ . '/..' . '/symfony/string/Resources/functions.php',
         'a1105708a18b76903365ca1c4aa61b02' => __DIR__ . '/..' . '/symfony/translation/Resources/functions.php',
-        '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
         '538ca81a9a966a6716601ecf48f4eaef' => __DIR__ . '/..' . '/opis/closure/functions.php',
+        'ec07570ca5a812141189b1fa81503674' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/Assert/Functions.php',
         '38143a9afc50997d55e4815db8489d1c' => __DIR__ . '/..' . '/rector/rector/bootstrap.php',
         '3074abeef0bacf5811f59e9dee6311d1' => __DIR__ . '/..' . '/spatie/ray/src/helpers.php',
         '2c102faa651ef8ea5874edb585946bce' => __DIR__ . '/..' . '/swiftmailer/swiftmailer/lib/swift_required.php',
@@ -36,7 +37,8 @@ class ComposerStaticInitb860ab35a9ddadff9b004320e49cef92
         'c72349b1fe8d0deeedd3a52e8aa814d8' => __DIR__ . '/..' . '/mockery/mockery/library/helpers.php',
         'ce9671a430e4846b44e1c68c7611f9f5' => __DIR__ . '/..' . '/mockery/mockery/library/Mockery.php',
         '1ff88ee2daa64f07d9a89cd819aa198e' => __DIR__ . '/..' . '/orchestra/testbench-core/src/functions.php',
-        'ec07570ca5a812141189b1fa81503674' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/Assert/Functions.php',
+        'f83ed111c2f97a0449abf067f157f418' => __DIR__ . '/..' . '/pestphp/pest/src/Functions.php',
+        '7d2876738dc0328edeb8a103c76cd8e7' => __DIR__ . '/..' . '/pestphp/pest/src/Pest.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -52,6 +54,7 @@ class ComposerStaticInitb860ab35a9ddadff9b004320e49cef92
         ),
         'W' => 
         array (
+            'Whoops\\' => 7,
             'Webmozart\\Assert\\' => 17,
         ),
         'T' => 
@@ -109,11 +112,17 @@ class ComposerStaticInitb860ab35a9ddadff9b004320e49cef92
             'Psr\\Clock\\' => 10,
             'PhpParser\\' => 10,
             'PhpOption\\' => 10,
+            'Pest\\Plugin\\' => 12,
+            'Pest\\' => 5,
         ),
         'O' => 
         array (
             'Orchestra\\Testbench\\' => 20,
             'Opis\\Closure\\' => 13,
+        ),
+        'N' => 
+        array (
+            'NunoMaduro\\Collision\\' => 21,
         ),
         'M' => 
         array (
@@ -142,6 +151,7 @@ class ComposerStaticInitb860ab35a9ddadff9b004320e49cef92
         'F' => 
         array (
             'Faker\\' => 6,
+            'Facade\\IgnitionContracts\\' => 25,
         ),
         'E' => 
         array (
@@ -185,6 +195,10 @@ class ComposerStaticInitb860ab35a9ddadff9b004320e49cef92
         'ZBateson\\MailMimeParser\\' => 
         array (
             0 => __DIR__ . '/..' . '/zbateson/mail-mime-parser/src',
+        ),
+        'Whoops\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/filp/whoops/src/Whoops',
         ),
         'Webmozart\\Assert\\' => 
         array (
@@ -367,6 +381,14 @@ class ComposerStaticInitb860ab35a9ddadff9b004320e49cef92
         array (
             0 => __DIR__ . '/..' . '/phpoption/phpoption/src/PhpOption',
         ),
+        'Pest\\Plugin\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/pestphp/pest-plugin/src',
+        ),
+        'Pest\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/pestphp/pest/src',
+        ),
         'Orchestra\\Testbench\\' => 
         array (
             0 => __DIR__ . '/..' . '/orchestra/testbench-core/src',
@@ -374,6 +396,10 @@ class ComposerStaticInitb860ab35a9ddadff9b004320e49cef92
         'Opis\\Closure\\' => 
         array (
             0 => __DIR__ . '/..' . '/opis/closure/src',
+        ),
+        'NunoMaduro\\Collision\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/nunomaduro/collision/src',
         ),
         'Monolog\\' => 
         array (
@@ -427,6 +453,10 @@ class ComposerStaticInitb860ab35a9ddadff9b004320e49cef92
         'Faker\\' => 
         array (
             0 => __DIR__ . '/..' . '/fakerphp/faker/src/Faker',
+        ),
+        'Facade\\IgnitionContracts\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/facade/ignition-contracts/src',
         ),
         'Egulias\\EmailValidator\\' => 
         array (
