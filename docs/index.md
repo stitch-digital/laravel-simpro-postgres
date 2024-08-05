@@ -15,7 +15,8 @@ The direct connection to a read-only Postgres database is a great way to get dat
 ### Accessing a Simpro Postgres connection
 To access a Simpro Postgres connection, you will need to speak to your Simpro representative to provide access.
 
-> [!IMPORTANT]
+> ### Important Note
+> 
 > You will need to ensure that your Simpro build is on a private cloud infrastructure, as the Postgres database is not available on the shared cloud infrastructure. This will incur additional cost.
 
 You should expect to receive the following:

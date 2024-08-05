@@ -1,10 +1,7 @@
 <?php
 
-/*
- * You can place your custom package configuration in here.
- */
 return [
-    'pgsql' => [
+    'database' => [
         'driver' => 'pgsql',
         'host' => env('SIMPRO_DB_HOST'),
         'port' => env('SIMPRO_DB_PORT', '5432'),
