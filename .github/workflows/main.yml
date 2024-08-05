@@ -37,9 +37,17 @@ jobs:
               run: |
                   echo "::add-matcher::${{ runner.tool_cache }}/php.json"
                   echo "::add-matcher::${{ runner.tool_cache }}/phpunit.json"
+
             - name: Install dependencies
               run: |
                   composer require "laravel/framework:${{ matrix.laravel }}" "orchestra/testbench:${{ matrix.testbench }}" --no-interaction --no-update
                   composer update --${{ matrix.stability }} --prefer-dist --no-interaction
+
+            - name: Install Pest
+              run: composer require pestphp/pest --dev
+
+            - name: Initialise Pest
+              run: vendor/bin/pest --init
+
             - name: Execute tests
-              run: vendor/bin/phpunit
+              run: vendor/bin/pest
